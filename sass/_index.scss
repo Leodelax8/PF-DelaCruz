@@ -1,0 +1,63 @@
+/* Variables */
+$verde-fluo: chartreuse;
+$verde-claro: chartreuse;
+
+
+/* Banner principal */
+.carousel-caption {
+    justify-content: center;
+    margin-top: 100px;
+}
+.d-item {
+    height: 600px;
+    margin-bottom: 0px;
+    align-content: center;
+    &hover {
+        color: white;
+    }
+}
+.imagenbannerprincipal {
+    min-height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+
+/* Acerca de mí */
+.acercademi {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.fotoperfil {
+    width: 250px;
+}
+
+
+/* Cualidades */
+.cualidades {
+    background-color: #444444;
+    color: $verde-fluo;
+    min-width: 100%;
+}
+.cardcualidades {
+    align-items: center;
+    justify-content: center;
+}
+.bloquecualidades {
+    img{
+        width: 100px;
+        margin: 20px 30px 10px 30px
+    }
+}
+
+
+
+
+/* Galería Home */
+.imagentrabajoshome {
+    min-height: 100%;
+    object-fit: cover;
+    height: 600px;
+}

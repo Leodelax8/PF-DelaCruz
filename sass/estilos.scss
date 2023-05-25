@@ -1,0 +1,277 @@
+@use "index";
+@use "acercademi";
+@use "contacto";
+@use "cv";
+@use "trabajos";
+
+
+
+/* Variables */
+$verde-fluo: chartreuse;
+$verde-claro: #abffab;
+
+
+
+/* Generales */
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Work Sans', sans-serif;
+}
+html, body {
+    min-height: 100%;
+}
+h2 {
+    font-weight: 700;
+}
+.linkboton {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+    background-color:$verde-claro;
+    border: none;
+    margin: 10px;
+    &:hover {
+        background-color: #000000; /* Green */
+        color: $verde-fluo;
+    }
+p {
+        margin-top: 40px;
+    }
+}
+.linktexto {
+    a{
+        text-decoration: none;
+        border: none;
+        p{
+        color: white;
+        &:hover {
+        color: $verde-fluo;
+        }
+    }
+    }
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Botones */
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+    background-color:$verde-claro;
+    border: none;
+    margin: 10px;
+    &:hover {
+        background-color: #000000; /* Green */
+        color: $verde-fluo;
+    }
+p {
+        margin-top: 40px;
+    }
+}
+
+
+
+/* Iconos */
+.icono {
+    width: 50px;
+}
+
+
+
+/* Nav Bar */
+.navbar {
+    background-color: black;
+    a {
+        color: white;
+        margin: 10px;
+        &:hover {
+            color: $verde-fluo;
+        }
+    }
+}
+#navbarNav {
+    color: white;
+}
+.navbar-toggler {
+    margin-top: 0;
+    border: none;
+}
+.logoleodelax {
+    margin: 20px 30px 20px 30px
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #121315;
+    color: #a7a7a7;
+    font-size: 16px;
+}
+.logoleodelax2 {
+width: 120px;
+margin-bottom: 10px;
+}
+.row {
+    padding: 3em 3em 2em;
+}
+.row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+}
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+    min-height: 11em;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    li {
+        a:hover {
+            color: $verde-fluo;
+        }
+    }
+}
+.about p {
+    margin: 0;
+}
+input {
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 40px;
+}
+div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+}
+.social i {
+    color: #bac6d9;
+}
+.copyright {
+    padding: 0.3em 1em;
+    background-color: #000000;
+}
+.footer-menu{
+    float: left;
+    margin-top: 10px;
+    a{
+        color: #cfd2d6;
+        padding: 6px;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 850px) {
+    .row.primary {
+    grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Banners secundarios */
+.bannersecundarios{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0px;
+    h5{
+        margin-top: 60px;
+    }
+    img{
+        height: 200px;
+        min-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        float: none;
+        border-radius: 0px;
+    }
+}
+
+
+
+/* Formulario contacto */
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+.titulocontacto {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: rgb(10, 10, 10);
+}
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+.contact-wrapper > * {
+    padding: 1em;
+}
+.contact-form {
+    background: #d1d1d1;
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        label {
+        display: block;
+        color: #505050;
+        }
+        p {
+        margin: 0;
+        padding: 1em;
+        }
+        .block {
+        grid-column: 1 / 3;
+        }
+        
+    }
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #000000;
+    border-bottom: 1px solid #505050;
+}
+.contact-form form button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    color: chartreuse;
+    background-color:rgb(0, 0, 0);
+    border: none;
+    margin-bottom: 20px;
+}
+.contact-form form button:hover {
+    background-color: chartreuse; /* Green */
+    color:#000000;
+}
+
