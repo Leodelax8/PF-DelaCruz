@@ -32,12 +32,20 @@ $verde-claro: chartreuse;
 }
 .fotoperfil {
     width: 250px;
+    &:hover {
+    animation:heartbeat 2s steps(2,end) both
 }
+}
+@keyframes heartbeat{from{transform:scale(1);transform-origin:center center;animation-timing-function:ease-out}10%{transform:scale(.91);animation-timing-function:ease-in}17%{transform:scale(.98);animation-timing-function:ease-out}33%{transform:scale(.87);animation-timing-function:ease-in}45%{transform:scale(1);animation-timing-function:ease-out}}
 
 
 /* Cualidades */
 .cualidades {
-    background-color: #444444;
+    background-image: url(../img/fondocualidades.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     color: $verde-fluo;
     min-width: 100%;
 }
@@ -47,11 +55,10 @@ $verde-claro: chartreuse;
 }
 .bloquecualidades {
     img{
-        width: 100px;
-        margin: 20px 30px 10px 30px
+        width: 140px;
+        padding:20px 20px 20px 20px;
     }
 }
-
 
 
 

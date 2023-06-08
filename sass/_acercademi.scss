@@ -1,6 +1,10 @@
 .infoadicional img {
     width: 120px;
 }
+.infoadicional img:hover {
+    animation:vibrate-1 .3s linear infinite both
+}
+@keyframes vibrate-1{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
 .bloqueCV {
     background-color: #444444;
     border-radius: 20px;
@@ -13,4 +17,9 @@
         font-weight: 200;
         font-size:smaller
     }
+    &:hover {
+        background-color: #777777;
+        animation:rotate-hor-center .5s cubic-bezier(.455,.03,.515,.955) both
+    }
 }
+@keyframes rotate-hor-center{0%{transform:rotateX(0)}100%{transform:rotateX(-360deg)}}
