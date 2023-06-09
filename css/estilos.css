@@ -60,7 +60,7 @@
 }
 /* Cualidades */
 .cualidades {
-  background-image: url(../img/fondocualidades.jpg);
+  background-image: url(./img/fondocualidades.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -465,6 +465,7 @@ div.social {
 }
 
 .contact-form {
+  background: url(./img/videofondocontacto.gif);
   background: url(../img/videofondocontacto.gif);
   background-repeat: no-repeat;
   background-position: center;
