@@ -29,7 +29,7 @@
 }
 
 .fotoperfil {
-  width: 250px;
+  width: 260px;
 }
 .fotoperfil:hover {
   animation: heartbeat 2s steps(2, end) both;
@@ -59,9 +59,8 @@
   }
 }
 /* Cualidades */
-.bloquecualidades {
+.cualidades {
   background-image: url(../img/fondocualidades.jpg);
-  background-image: url(./img/fondocualidades.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -76,8 +75,8 @@
 }
 
 .bloquecualidades img {
-  width: 140px;
-  padding: 20px 20px 20px 20px;
+  width: 100px;
+  margin: 20px 30px 10px 30px;
 }
 
 /* Galería Home */

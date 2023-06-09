@@ -40,9 +40,8 @@ $verde-claro: chartreuse;
 
 
 /* Cualidades */
-.bloquecualidades {
+.cualidades {
     background-image: url(../img/fondocualidades.jpg);
-    background-image: url(./img/fondocualidades.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -56,8 +55,8 @@ $verde-claro: chartreuse;
 }
 .bloquecualidades {
     img{
-        width: 140px;
-        padding:20px 20px 20px 20px;
+        width: 100px;
+        margin: 20px 30px 10px 30px
     }
 }
 
