@@ -79,6 +79,22 @@ p {
     }
 }
 
+boton-secundario a{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+    background-color:$verde-claro;
+    border: none;
+    margin: 10px;
+    &:hover {
+        background-color: #000000; /* Green */
+        color: $verde-fluo;
+    }
+p {
+        margin-top: 40px;
+    }
+}
 
 
 /* Iconos */
@@ -266,7 +282,7 @@ div.social {
     border: none;
     background: none;
     outline: 0;
-    color: #000000;
+    color: #ffffff;
     border-bottom: 1px solid white;
 }
 .contact-form form button {

@@ -142,12 +142,10 @@
 }
 /* Mapa contacto */
 .map-responsive {
-  position: relative;
-  height: 0;
-}
-
-.mapa-responsive iframe {
+  height: 200px;
   min-width: 100%;
+  float: none;
+  overflow-x: hidden;
 }
 
 /* Variables */
@@ -299,6 +297,23 @@ button:hover {
   color: chartreuse;
 }
 button p {
+  margin-top: 40px;
+}
+
+boton-secundario a {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 10px 20px 10px 20px;
+  border-radius: 40px;
+  background-color: #abffab;
+  border: none;
+  margin: 10px;
+}
+boton-secundario a:hover {
+  background-color: #000000; /* Green */
+  color: chartreuse;
+}
+boton-secundario a p {
   margin-top: 40px;
 }
 
@@ -496,7 +511,7 @@ div.social {
   border: none;
   background: none;
   outline: 0;
-  color: #000000;
+  color: #ffffff;
   border-bottom: 1px solid white;
 }
 
